@@ -14,7 +14,7 @@ function quotient(num1, num2){
   return num1 / num2;
 }
 function calc(operation, num1, num2) {
-  switch(operation){
+  switch(operation) {
     case 'add' : return sum(num1, num2);
     case 'difference' : return difference(num1, num2);
     case 'product' : return product(num1, num2);
@@ -58,7 +58,9 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // It should return the message 'Operation not supported.' when the user provides: exponent, 2, 8.
-
+  var result = calc('exponent', 2, 8);
+  if (result !== undefined) throw new Error('Expected calc("exponent", 2, 8) to be undefined. Received: ' + result);
+  
   console.log('All tests passed successfully.');
 
 // ==================================================
