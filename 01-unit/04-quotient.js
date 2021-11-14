@@ -20,6 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
+  var result = quotient(2, 0);
+  if (result !== Infinity) throw new Error('Expected quotient(2, 0) to be ERROR. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 3
