@@ -10,11 +10,15 @@ function difference(num1, num2){
 function product(num1, num2){
   return num1 * num2;
 }
+function quotient(num1, num2){
+  return num1 / num2;
+}
 function calc(operation, num1, num2) {
   switch(operation){
     case 'add' : return sum(num1, num2);
     case 'difference' : return difference(num1, num2);
     case 'product' : return product(num1, num2);
+    case 'quotient' : return quotien (num1, num2);
   }
 }
 
@@ -47,6 +51,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
+  var result = calc('quotient', 9, 3);
+  if (result !== 3) throw new Error('Expected calc("quotient", 9, 3) to be 3. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
