@@ -18,7 +18,7 @@ function calc(operation, num1, num2) {
     case 'add' : return sum(num1, num2);
     case 'difference' : return difference(num1, num2);
     case 'product' : return product(num1, num2);
-    case 'quotient' : return quotien (num1, num2);
+    case 'quotient' : return quotient (num1, num2);
   }
 }
 
